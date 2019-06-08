@@ -1,0 +1,14 @@
+{
+    "ictest": {
+        "awscloudformation": {
+            "AuthRoleName": "icchallenge-20190608111533-authRole",
+            "UnauthRoleArn": "arn:aws:iam::331179523229:role/icchallenge-20190608111533-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::331179523229:role/icchallenge-20190608111533-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "icchallenge-20190608111533-deployment",
+            "UnauthRoleName": "icchallenge-20190608111533-unauthRole",
+            "StackName": "icchallenge-20190608111533",
+            "StackId": "arn:aws:cloudformation:us-east-1:331179523229:stack/icchallenge-20190608111533/68a5c2a0-8a19-11e9-84af-0a51b82e168a"
+        }
+    }
+}
