@@ -1,7 +1,16 @@
 {
-    "projectName": "IC Challenge",
+    "projectName": "ictest",
     "version": "2.0",
-    "frontend": "ios",
+    "frontend": "javascript",
+    "javascript": {
+        "framework": "react-native",
+        "config": {
+            "SourceDir": "/src",
+            "DistributionDir": "/dist",
+            "BuildCommand": "npm run-script build",
+            "StartCommand": "npm run-script start"
+        }
+    },
     "providers": [
         "awscloudformation"
     ]

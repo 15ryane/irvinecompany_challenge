@@ -1,12 +1,13 @@
 import { StyleSheet } from 'react-native'; 
 
 const styles = StyleSheet.create({
+  
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
-    padding: 20
+    paddingHorizontal: 50
   },
 
   title: {
@@ -36,6 +37,13 @@ const styles = StyleSheet.create({
   loginButtonHelp: {
     fontSize: 15
   },
+
+  txtMessage: {
+    color: 'red',
+    textAlign: 'center',
+    marginTop: 20,
+    marginBottom: -20
+  }
 
 });
 
