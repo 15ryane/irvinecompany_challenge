@@ -21,7 +21,7 @@ Backend logic is handled through AWS Cognito. The details of authentication - pa
 
 The UI is fortified with react-native-elements. Stylings are not in-line - rather, they are declared in a seperate styles.js file and imported. Looks good in both orientations!
 
-<div align="center"><img src="./IC_chall.gif" width="206" height="130" title="app demo"></div>
+<div align="center"><img src="./IC_chall.gif" width="306" height="612" title="app demo"></div>
 
 ### Thanks!
 
