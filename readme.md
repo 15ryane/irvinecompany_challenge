@@ -1,4 +1,4 @@
-#Irvine Company Challenge
+# Irvine Company Challenge
 Ed Ryan, Jun 8-9th
 
 Specifications: Create a login screen using react-native and node.js.
