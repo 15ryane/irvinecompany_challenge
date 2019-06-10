@@ -19,7 +19,9 @@ State is managed through react-hooks. This allows us to entirely avoid class dec
 
 Backend logic is handled through AWS Cognito. The details of authentication - password validation, creating accounts, hashing and storing passwords, sending verification codes through email, resetting account passwords - are all gracefully handled by Amazon.
 
-The UI is fortified with react-native-elements. Stylings are not in-line - rather, they are declared in a seperate styles.js file and imported.
+The UI is fortified with react-native-elements. Stylings are not in-line - rather, they are declared in a seperate styles.js file and imported. Looks good in both orientations!
+
+<div align="center"><img src="./IC_chall.gif" width="206" height="130" title="app demo"></div>
 
 ### Thanks!
 
