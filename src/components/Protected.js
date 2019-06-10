@@ -1,22 +1,21 @@
-import React, { useState } from 'react';
-import { Platform, View } from 'react-native';
-import { Input, Button, Text } from 'react-native-elements';
+import React from 'react';
+import { View, AsyncStorage } from 'react-native';
+import { Button, Text } from 'react-native-elements';
 import { Auth } from 'aws-amplify';
 import styles from '../styles/styles.js'
 
 const Protected = (props) => {
-
-  const { user } = props.navigation.state.params;
-
+  
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Welcome, {user.username}!</Text>
+      <Text style={styles.title}>Welcome to the app!</Text>
       <Button
         style={styles.loginButton}
         title='Sign out'
         onPress={ async function() {
-          await Auth.signOut(user);
-          props.navigation.navigate('Login', {error: 'Signed out!'});
+          await Auth.signOut(await AsyncStorage.getItem('userToken').username);
+          await AsyncStorage.clear();
+          props.navigation.navigate('Auth');
         } }
       />
     </View>

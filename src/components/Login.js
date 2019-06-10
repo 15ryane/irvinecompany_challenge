@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { Platform, View } from 'react-native';
+import { View, AsyncStorage } from 'react-native';
 import { Input, Button, Text } from 'react-native-elements';
 import { Auth } from 'aws-amplify';
 import styles from '../styles/styles.js';
-
-
 
 const Login = (props) =>  {
 
@@ -71,8 +69,9 @@ const Login = (props) =>  {
             setState({...state, submitted: true});
             if(!state.needsVerification) {
               const user = await Auth.signIn(state.username, state.password)
+              await AsyncStorage.setItem('userToken', user);
               clearState();
-              props.navigation.navigate('Protected', { user: user} );
+              props.navigation.navigate('App');
             } else {
               await Auth.confirmSignUp(state.username, state.verifyCode)
               setState({

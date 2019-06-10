@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Platform, View } from 'react-native';
+import { View } from 'react-native';
 import { Input, Button, Text } from 'react-native-elements';
 import { Auth } from 'aws-amplify';
 import styles from '../styles/styles.js'

@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native'; 
 
 const styles = StyleSheet.create({
-  
+
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -28,7 +28,6 @@ const styles = StyleSheet.create({
   },
 
   loginSubmit: {
-    width: 170,
     paddingHorizontal: 50,
     marginTop: 40,
     marginBottom: 20
